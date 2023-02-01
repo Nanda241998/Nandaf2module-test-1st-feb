@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+  </head>
+
+  <body>
+          <h1><center>GALLERY</center></h1> <br><br>
+          <div class="flex-container">
+            <div class="item">
+                <!--img src="taj mahal.jpg" alt="taj mahal" style="height: 310px; width: 310px;"-->
+                
+                <button id= "myBtn"onclick="myfunction1();this.disabled=true;"> <img src="taj mahal.jpg" alt="taj'mahal"style="height: 310px; width: 310px;"></button>
+                
+               </button>
+            
+            </div>&nbsp;&nbsp;&nbsp;
+
+            <div class="item">
+             <button id="myBtn"onclick="myfunction2(); this.disabled=true;"><img src="temple.jpg" alt="temple"style="height: 310px; width: 310px"></button>
+            </div>&nbsp;&nbsp;&nbsp;
+
+            <div class="item">
+                <button id="myBtn"onclick="myfunction(); this.disabled=true;"><img src="festival.jpg" alt="fesival"style="height: 310px; width: 310px;"></button>
+            </div>&nbsp;&nbsp;&nbsp;
+
+            <div class="item">
+               <button id="myBtn"onclick="myfunction3(); this.disabled= true;"> <img src="gateway of india.jpg" alt="gateway of india"style="height: 310px; width: 310px;"></button>
+            </div>&nbsp;&nbsp;&nbsp;
+
+          </div>
+    <script> var images = document.querySelectorAll('.img');
+
+    var currentIndex = 0;
+
+    for(var i=0; i< images.length; i++)
+    {
+      images[i].addEventListener("click",function(){
+        if(clickedImages.length === i){
+          clickedImages.push(i);
+        }
+      })
+    }
+         function myfunction1(){
+        
+            location.href ="local storage.html";
+          
+        }
+        function myfunction2(){
+            location.href = "register.html";
+           
+        }
+        function myfunction(){
+            location.href="dice.html";
+            
+          
+        }
+        function myfunction3(){
+            location.href="coupan.html";
+
+            
+        }
+    </script>
+
+  </body>
+</html>
